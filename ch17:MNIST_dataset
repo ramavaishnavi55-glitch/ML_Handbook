@@ -1,0 +1,132 @@
+# Chapter 17: MNIST Dataset
+
+## Introduction
+
+MNIST is one of the most popular datasets used for learning image classification and Deep Learning.
+
+It contains handwritten digits from 0 to 9.
+
+---
+
+# Dataset Overview
+
+MNIST stands for:
+
+Modified National Institute of Standards and Technology Database
+
+---
+
+# Dataset Statistics
+
+Training Images: 60,000
+
+Testing Images: 10,000
+
+Total Images: 70,000
+
+Number of Classes: 10
+
+Digits: 0–9
+
+Image Size: 28 × 28 Pixels
+
+---
+
+# Sample Images
+
+The dataset contains grayscale handwritten digits.
+
+Each image consists of:
+
+28 × 28 = 784 pixels
+
+---
+
+# Why MNIST?
+
+MNIST is:
+
+* Small
+* Clean
+* Well-labeled
+* Easy to use
+
+Ideal for beginners learning Deep Learning.
+
+---
+
+# Classification Task
+
+Input:
+
+Handwritten Digit Image
+
+Output:
+
+Predicted Digit
+
+Example:
+
+Image of 7
+
+↓
+
+Model Prediction
+
+↓
+
+7
+
+---
+
+# Data Representation
+
+Each image contains pixel values:
+
+0 → Black
+
+255 → White
+
+These values become inputs to neural networks.
+
+---
+
+# Preprocessing
+
+Common preprocessing steps:
+
+* Normalization
+* Tensor conversion
+* Train-test split
+
+---
+
+# Applications
+
+MNIST concepts are used in:
+
+* OCR systems
+* Bank cheque processing
+* Postal code recognition
+* Form digitization
+
+---
+
+# Why MNIST is Important
+
+MNIST serves as the benchmark dataset for many Deep Learning algorithms.
+
+---
+
+# What I Learned
+
+* Image datasets
+* Pixel representation
+* Classification datasets
+* Data preprocessing
+
+---
+
+# Key Takeaways
+
+MNIST is the most commonly used introductory dataset for image classification and CNN learning.
