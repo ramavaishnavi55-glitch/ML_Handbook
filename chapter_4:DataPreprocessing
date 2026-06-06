@@ -1,0 +1,419 @@
+# Chapter 4: Data Preprocessing
+
+## Introduction
+
+Data Preprocessing is the process of cleaning and transforming raw data into a format suitable for machine learning.
+
+Real-world data is often incomplete, inconsistent, noisy, and contains errors.
+
+Data preprocessing improves data quality and helps machine learning models perform better.
+
+---
+
+# Why Data Preprocessing is Important
+
+Machine Learning models learn from data.
+
+If the data is poor, the model will also perform poorly.
+
+Common issues include:
+
+* Missing values
+* Duplicate records
+* Incorrect data types
+* Outliers
+* Inconsistent formatting
+
+This concept is often called:
+
+**Garbage In → Garbage Out (GIGO)**
+
+---
+
+# Data Preprocessing Workflow
+
+Raw Data
+
+↓
+
+Data Cleaning
+
+↓
+
+Handling Missing Values
+
+↓
+
+Removing Duplicates
+
+↓
+
+Fixing Data Types
+
+↓
+
+Outlier Detection
+
+↓
+
+Feature Scaling
+
+↓
+
+Clean Data
+
+↓
+
+Model Training
+
+---
+
+# 1. Handling Missing Values
+
+## Definition
+
+Missing values occur when information is unavailable for certain records.
+
+Example:
+
+| Rating | Popularity |
+| ------ | ---------- |
+| 8.5    | 95         |
+| 7.8    | NULL       |
+
+---
+
+## Methods
+
+### Mean Imputation
+
+Replace missing values with average value.
+
+Example:
+
+Popularity:
+
+80, 90, 100
+
+Mean:
+
+90
+
+Missing value becomes:
+
+90
+
+---
+
+### Median Imputation
+
+Replace with median value.
+
+Useful when outliers exist.
+
+---
+
+### Mode Imputation
+
+Replace with most frequent value.
+
+Useful for categorical data.
+
+---
+
+# Example from Movie Recommendation Project
+
+Missing Values:
+
+Popularity = 1
+
+Solution:
+
+Mean Imputation
+
+Final Missing Values = 0
+
+---
+
+# 2. Removing Duplicate Records
+
+## Definition
+
+Duplicate records appear more than once.
+
+Example:
+
+Movie A
+
+Movie A
+
+Movie A
+
+Duplicates can bias model learning.
+
+---
+
+## Solution
+
+Remove duplicate rows.
+
+---
+
+# Example
+
+Movie Recommendation Project:
+
+Duplicate Rows = 1
+
+After Cleaning:
+
+Duplicate Rows = 0
+
+---
+
+# 3. Fixing Incorrect Data Types
+
+## Definition
+
+Machine learning algorithms require correct data types.
+
+Example:
+
+Rating = "eight"
+
+Stored as text instead of number.
+
+---
+
+## Solution
+
+Convert:
+
+Object
+
+↓
+
+Numeric
+
+---
+
+# Example
+
+Movie Recommendation Project
+
+Rating:
+
+"eight"
+
+↓
+
+8.0
+
+---
+
+# 4. Outlier Detection
+
+## Definition
+
+Outliers are unusually large or small values.
+
+Example:
+
+Most salaries:
+
+₹30,000 – ₹100,000
+
+One salary:
+
+₹5,000,000
+
+This record may distort learning.
+
+---
+
+## Common Detection Methods
+
+* Box Plot
+* IQR Method
+* Z-Score
+
+---
+
+# 5. Data Normalization
+
+## Definition
+
+Rescaling values into a fixed range.
+
+Usually:
+
+0 to 1
+
+---
+
+## Formula
+
+x_normalized
+
+=
+
+(x − min)
+
+/
+
+(max − min)
+
+---
+
+## Example
+
+Age:
+
+20
+
+40
+
+60
+
+Normalized:
+
+0
+
+0.5
+
+1
+
+---
+
+# 6. Standardization
+
+## Definition
+
+Transforming data so it has:
+
+Mean = 0
+
+Standard Deviation = 1
+
+---
+
+## Formula
+
+Standardized Value
+
+=
+
+(x − Mean)
+
+/
+
+Standard Deviation
+
+---
+
+## Example
+
+Used in:
+
+Customer Segmentation Project
+
+Before K-Means Clustering
+
+---
+
+# Why Scaling Matters
+
+Without scaling:
+
+Income = 100000
+
+Age = 25
+
+Income dominates learning.
+
+After scaling:
+
+Income and Age contribute equally.
+
+---
+
+# Data Preprocessing in My Projects
+
+## Insurance Cost Prediction
+
+Performed:
+
+* Missing value check
+* Data inspection
+* Feature preparation
+
+---
+
+## Customer Segmentation
+
+Performed:
+
+* Standardization
+* Feature scaling
+
+---
+
+## Movie Recommendation System
+
+Performed:
+
+* Missing value handling
+* Duplicate removal
+* Data type conversion
+
+---
+
+## Handwritten Digit Recognition
+
+Performed:
+
+* Pixel normalization
+* Tensor conversion
+
+Original Pixel Range:
+
+0–255
+
+Normalized Range:
+
+0–1
+
+---
+
+# Benefits of Data Preprocessing
+
+* Improves model accuracy
+* Reduces noise
+* Faster training
+* Better generalization
+* More reliable predictions
+
+---
+
+# Key Takeaways
+
+* Data preprocessing prepares raw data for machine learning.
+* Missing values should be handled carefully.
+* Duplicate records should be removed.
+* Data types must be correct.
+* Scaling is essential for many algorithms.
+* Better data leads to better models.
+
+---
+
+# What I Learned
+
+* Handling missing values
+* Duplicate removal
+* Data cleaning techniques
+* Data type conversion
+* Normalization
+* Standardization
+* Importance of data quality
+
+Data preprocessing is one of the most important stages in the machine learning lifecycle.
