@@ -1,0 +1,217 @@
+# Chapter 10: K-Means Clustering
+
+## Introduction
+
+K-Means is one of the most widely used clustering algorithms.
+
+It divides data into K distinct clusters based on similarity.
+
+The algorithm attempts to minimize the distance between data points and their cluster centers.
+
+---
+
+# What is K-Means?
+
+K = Number of Clusters
+
+Means = Cluster Centers (Centroids)
+
+Goal:
+
+Group similar data points into K clusters.
+
+---
+
+# K-Means Workflow
+
+Choose K
+
+↓
+
+Initialize Centroids
+
+↓
+
+Assign Points to Nearest Centroid
+
+↓
+
+Update Centroids
+
+↓
+
+Repeat Until Convergence
+
+---
+
+# How K-Means Works
+
+Step 1
+
+Choose K
+
+Example:
+
+K = 3
+
+---
+
+Step 2
+
+Randomly select centroids.
+
+---
+
+Step 3
+
+Assign each data point to the nearest centroid.
+
+---
+
+Step 4
+
+Recalculate centroid positions.
+
+---
+
+Step 5
+
+Repeat until centroids stop moving.
+
+---
+
+# Distance Measurement
+
+K-Means commonly uses:
+
+Euclidean Distance
+
+Distance between data points and centroids.
+
+---
+
+# Choosing the Best K
+
+## Elbow Method
+
+The most common method.
+
+Procedure:
+
+1. Train K-Means for multiple K values.
+2. Calculate WCSS.
+3. Plot K vs WCSS.
+4. Find the elbow point.
+
+---
+
+# WCSS
+
+Within Cluster Sum of Squares
+
+Measures cluster compactness.
+
+Lower WCSS indicates tighter clusters.
+
+---
+
+# Customer Segmentation Project
+
+## Goal
+
+Group customers based on behavior.
+
+---
+
+# Features Used
+
+* Income
+* Spending Score
+
+---
+
+# Data Preparation
+
+Performed:
+
+* Data Cleaning
+* Standardization
+
+---
+
+# Model Training
+
+Algorithm:
+
+K-Means Clustering
+
+---
+
+# Cluster Formation
+
+Customers grouped into different segments such as:
+
+* High Income, High Spending
+* High Income, Low Spending
+* Low Income, High Spending
+* Low Income, Low Spending
+
+---
+
+# Why Standardization Was Needed
+
+Income values were much larger than spending scores.
+
+Without scaling:
+
+Income dominates clustering.
+
+With scaling:
+
+Both features contribute equally.
+
+---
+
+# Advantages
+
+* Fast
+* Simple
+* Easy to implement
+* Scales well
+
+---
+
+# Limitations
+
+* Must choose K beforehand
+* Sensitive to outliers
+* Sensitive to initialization
+
+---
+
+# Real-World Applications
+
+* Customer Segmentation
+* Product Recommendations
+* Image Compression
+* Fraud Analysis
+
+---
+
+# Key Takeaways
+
+* K-Means groups similar data points.
+* K determines the number of clusters.
+* Elbow Method helps select K.
+* Standardization improves clustering quality.
+
+---
+
+# What I Learned
+
+* K-Means workflow
+* Centroids
+* Euclidean distance
+* WCSS
+* Elbow Method
+* Customer Segmentation
