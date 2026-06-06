@@ -1,0 +1,265 @@
+# Chapter 11: Movie Recommendation System using K-Means Clustering
+
+## Introduction
+
+This project implements a Movie Recommendation System using K-Means Clustering, an unsupervised machine learning algorithm.
+
+Movies are grouped based on similarity in rating and popularity, allowing recommendations without requiring labeled data.
+
+---
+
+# Problem Statement
+
+Movie platforms contain thousands of movies.
+
+Users often struggle to discover content matching their interests.
+
+Goals:
+
+* Group similar movies.
+* Discover hidden patterns.
+* Recommend similar movies.
+
+---
+
+# Dataset Information
+
+Dataset Shape:
+
+(50, 5)
+
+Features:
+
+| Feature    | Description      |
+| ---------- | ---------------- |
+| Movie      | Movie Name       |
+| Genre      | Category         |
+| Rating     | Movie Rating     |
+| Popularity | Popularity Score |
+| Vote_Count | Number of Votes  |
+
+---
+
+# Data Cleaning
+
+## Issues Found
+
+### Missing Values
+
+Popularity = 1
+
+---
+
+### Duplicate Rows
+
+Duplicate Records = 1
+
+---
+
+### Invalid Data Type
+
+Rating = "eight"
+
+Stored as text.
+
+---
+
+# Data Preprocessing
+
+Performed:
+
+* Duplicate Removal
+* Data Type Conversion
+* Mean Imputation
+
+---
+
+# Final Data Quality Check
+
+Missing Values = 0
+
+Duplicate Rows = 0
+
+---
+
+# Feature Selection
+
+Selected Features:
+
+* Rating
+* Popularity
+
+---
+
+# Why These Features?
+
+* Represent movie quality
+* Represent audience engagement
+* Numerical features suitable for clustering
+
+---
+
+# Exploratory Data Analysis
+
+Scatter Plot:
+
+X-Axis → Rating
+
+Y-Axis → Popularity
+
+Observation:
+
+* Positive correlation observed.
+* Higher-rated movies generally had higher popularity.
+
+---
+
+# Elbow Method
+
+Procedure:
+
+1. Train K-Means for K = 1 to 10
+2. Compute WCSS
+3. Plot WCSS
+4. Identify elbow point
+
+---
+
+# Optimal K
+
+Selected:
+
+K = 4
+
+Reason:
+
+* Clear elbow point
+* Meaningful clusters
+* Good separation
+
+---
+
+# Model Configuration
+
+KMeans(
+
+n_clusters = 4,
+
+init = "k-means++",
+
+random_state = 42
+
+)
+
+---
+
+# Cluster Distribution
+
+Cluster 1 = 17 Movies
+
+Cluster 0 = 15 Movies
+
+Cluster 2 = 10 Movies
+
+Cluster 3 = 7 Movies
+
+---
+
+# Cluster Centers
+
+| Cluster | Rating | Popularity |
+| ------- | ------ | ---------- |
+| 0       | 7.78   | 85.91      |
+| 1       | 8.24   | 93.88      |
+| 2       | 7.41   | 77.50      |
+| 3       | 6.61   | 70.14      |
+
+---
+
+# Cluster Interpretation
+
+| Cluster | Meaning                              |
+| ------- | ------------------------------------ |
+| 0       | Good Movies                          |
+| 1       | Highly Rated & Highly Popular Movies |
+| 2       | Average Movies                       |
+| 3       | Lower Rated Movies                   |
+
+---
+
+# Recommendation System Logic
+
+User Inputs Movie
+
+↓
+
+Find Cluster
+
+↓
+
+Recommend Movies from Same Cluster
+
+---
+
+# Example
+
+Input:
+
+Interstellar
+
+Recommended Movies:
+
+* Inception
+* Avatar
+* Dune
+* The Martian
+* Avengers
+
+---
+
+# Why It Works
+
+Movies within the same cluster have similar rating and popularity characteristics.
+
+Therefore, they are likely to appeal to similar audiences.
+
+---
+
+# Learning Outcomes
+
+* Unsupervised Learning
+* K-Means Clustering
+* Elbow Method
+* Data Cleaning
+* Cluster Analysis
+* Recommendation Systems
+
+---
+
+# Future Improvements
+
+* Add Genre using One-Hot Encoding
+* Include Vote_Count
+* Top 10 Recommendations
+* Streamlit Web App
+* Compare with DBSCAN
+
+---
+
+# Key Takeaways
+
+* Recommendation systems can be built without labels.
+* Clustering discovers hidden relationships.
+* Feature selection strongly affects recommendations.
+* K-Means is effective for similarity-based grouping.
+
+---
+
+# What I Learned
+
+* End-to-end clustering workflow
+* Feature selection
+* Elbow Method
+* Recommendation system development
+* Cluster interpretation
+* Business understanding of movie groups
