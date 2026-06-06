@@ -1,0 +1,178 @@
+# Chapter 14: Deep Learning Fundamentals
+
+## Introduction
+
+Deep Learning is a subset of Machine Learning that uses Artificial Neural Networks with multiple layers to learn complex patterns from data.
+
+It is inspired by the structure and functioning of the human brain.
+
+Deep Learning can automatically learn important features from raw data without requiring extensive manual feature engineering.
+
+---
+
+# What is Deep Learning?
+
+Deep Learning is a machine learning technique that trains neural networks with many hidden layers.
+
+These networks learn hierarchical representations of data.
+
+Simple patterns are learned in early layers, while complex patterns are learned in deeper layers.
+
+---
+
+# Why Deep Learning?
+
+Traditional Machine Learning often requires manual feature extraction.
+
+Deep Learning automatically learns features from data.
+
+Advantages:
+
+* Automatic feature extraction
+* High accuracy
+* Handles large datasets
+* Works with images, text, audio, and videos
+
+---
+
+# Relationship Between AI, ML, and DL
+
+Artificial Intelligence
+
+↓
+
+Machine Learning
+
+↓
+
+Deep Learning
+
+Deep Learning is a specialized branch of Machine Learning.
+
+---
+
+# Key Components
+
+## Input Layer
+
+Receives data.
+
+Example:
+
+Image pixels
+
+---
+
+## Hidden Layers
+
+Process information.
+
+Perform feature extraction.
+
+---
+
+## Output Layer
+
+Produces final prediction.
+
+Examples:
+
+* Digit classification
+* Image recognition
+* Sentiment analysis
+
+---
+
+# How Deep Learning Works
+
+Input Data
+
+↓
+
+Forward Propagation
+
+↓
+
+Prediction
+
+↓
+
+Error Calculation
+
+↓
+
+Backpropagation
+
+↓
+
+Weight Update
+
+↓
+
+Improved Prediction
+
+---
+
+# Popular Deep Learning Architectures
+
+* Artificial Neural Networks (ANN)
+* Convolutional Neural Networks (CNN)
+* Recurrent Neural Networks (RNN)
+* LSTM Networks
+* Transformers
+
+---
+
+# Applications
+
+## Computer Vision
+
+* Face recognition
+* Object detection
+* Medical imaging
+
+## Natural Language Processing
+
+* Chatbots
+* Translation
+* Text generation
+
+## Speech Processing
+
+* Voice assistants
+* Speech recognition
+
+## Autonomous Vehicles
+
+* Self-driving cars
+
+---
+
+# Advantages
+
+* Learns complex patterns
+* High performance
+* End-to-end learning
+
+---
+
+# Limitations
+
+* Requires large datasets
+* Computationally expensive
+* Longer training time
+
+---
+
+# What I Learned
+
+* Difference between ML and DL
+* Neural network basics
+* Deep learning workflow
+* Real-world applications
+
+---
+
+# Key Takeaways
+
+Deep Learning enables machines to automatically learn complex features from data and powers many modern AI systems.
