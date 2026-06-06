@@ -1,0 +1,163 @@
+# Chapter 16: Convolutional Neural Networks (CNN)
+
+## Introduction
+
+Convolutional Neural Networks (CNNs) are specialized neural networks designed for image processing tasks.
+
+CNNs automatically learn visual features such as edges, shapes, textures, and objects.
+
+---
+
+# Why CNN?
+
+Traditional Neural Networks struggle with images because of high dimensionality.
+
+CNNs efficiently extract image features.
+
+---
+
+# CNN Architecture
+
+Input Image
+
+↓
+
+Convolution Layer
+
+↓
+
+Activation Function
+
+↓
+
+Pooling Layer
+
+↓
+
+Fully Connected Layer
+
+↓
+
+Output
+
+---
+
+# Convolution Layer
+
+Applies filters to images.
+
+Extracts:
+
+* Edges
+* Corners
+* Shapes
+* Patterns
+
+---
+
+# Feature Maps
+
+Outputs produced after convolution.
+
+Represent detected patterns.
+
+---
+
+# Activation Function
+
+Typically ReLU.
+
+Removes negative values.
+
+Introduces nonlinearity.
+
+---
+
+# Pooling Layer
+
+Reduces image dimensions.
+
+Types:
+
+* Max Pooling
+* Average Pooling
+
+Benefits:
+
+* Faster training
+* Reduced computation
+* Reduced overfitting
+
+---
+
+# Fully Connected Layer
+
+Combines extracted features.
+
+Produces final prediction.
+
+---
+
+# CNN Workflow
+
+Image
+
+↓
+
+Feature Extraction
+
+↓
+
+Pooling
+
+↓
+
+Classification
+
+↓
+
+Prediction
+
+---
+
+# Advantages
+
+* Automatic feature extraction
+* High accuracy
+* Efficient image processing
+
+---
+
+# Applications
+
+* Face recognition
+* Object detection
+* Medical imaging
+* OCR systems
+* Autonomous vehicles
+
+---
+
+# CNN vs ANN
+
+| Feature            | ANN    | CNN       |
+| ------------------ | ------ | --------- |
+| Image Processing   | Poor   | Excellent |
+| Parameters         | Large  | Reduced   |
+| Feature Extraction | Manual | Automatic |
+| Accuracy           | Lower  | Higher    |
+
+---
+
+# What I Learned
+
+* Convolution operations
+* Feature maps
+* Pooling layers
+* CNN architecture
+
+---
+
+# Key Takeaways
+
+CNNs are the most widely used Deep Learning models for image recognition and computer vision tasks.
