@@ -1,0 +1,177 @@
+# Chapter 15: Artificial Neural Networks (ANN)
+
+## Introduction
+
+Artificial Neural Networks (ANNs) are computational models inspired by biological neurons.
+
+They form the foundation of Deep Learning.
+
+ANNs learn relationships between inputs and outputs through training.
+
+---
+
+# Biological Inspiration
+
+Human Brain
+
+↓
+
+Neurons
+
+↓
+
+Connections
+
+↓
+
+Decision Making
+
+ANN follows a similar concept.
+
+---
+
+# Structure of ANN
+
+Input Layer
+
+↓
+
+Hidden Layer(s)
+
+↓
+
+Output Layer
+
+---
+
+# Neuron
+
+Each neuron performs:
+
+Weighted Sum
+
+↓
+
+Activation Function
+
+↓
+
+Output
+
+---
+
+# ANN Workflow
+
+Input Features
+
+↓
+
+Weighted Sum
+
+↓
+
+Activation Function
+
+↓
+
+Prediction
+
+---
+
+# Weights and Bias
+
+## Weights
+
+Determine importance of features.
+
+## Bias
+
+Helps shift predictions.
+
+---
+
+# Activation Functions
+
+## Sigmoid
+
+Outputs values between 0 and 1.
+
+## ReLU
+
+Most widely used.
+
+f(x)=max(0,x)
+
+## Softmax
+
+Used for multiclass classification.
+
+---
+
+# Training Process
+
+1. Initialize weights.
+2. Forward propagation.
+3. Compute loss.
+4. Backpropagation.
+5. Update weights.
+6. Repeat.
+
+---
+
+# Loss Function
+
+Measures prediction error.
+
+Examples:
+
+* Mean Squared Error
+* Cross Entropy Loss
+
+---
+
+# Backpropagation
+
+Backpropagation updates weights to reduce errors.
+
+This is the learning mechanism of neural networks.
+
+---
+
+# Applications
+
+* Fraud detection
+* Medical diagnosis
+* Stock prediction
+* Recommendation systems
+
+---
+
+# Advantages
+
+* Learns nonlinear relationships
+* Flexible architecture
+* High predictive power
+
+---
+
+# Limitations
+
+* Requires more data
+* Computationally intensive
+* Harder to interpret
+
+---
+
+# What I Learned
+
+* Neural network architecture
+* Weights and biases
+* Activation functions
+* Backpropagation
+
+---
+
+# Key Takeaways
+
+Artificial Neural Networks are the building blocks of modern Deep Learning systems.
