@@ -1,0 +1,173 @@
+# Chapter 7: Linear Regression
+
+## Introduction
+
+Linear Regression is one of the simplest and most important machine learning algorithms.
+
+It models the relationship between input features and a target variable using a straight-line equation.
+
+---
+
+# Linear Regression Equation
+
+Where:
+
+* y = Predicted Value
+* x = Input Feature
+* m = Slope
+* b = Intercept
+
+---
+
+# Goal of Linear Regression
+
+Find the best-fitting line that minimizes prediction error.
+
+---
+
+# How Linear Regression Learns
+
+Training Data
+
+↓
+
+Best Fit Line
+
+↓
+
+Learn Relationship
+
+↓
+
+Make Predictions
+
+---
+
+# Insurance Cost Prediction Project
+
+## Problem Statement
+
+Predict insurance charges based on customer information.
+
+---
+
+# Dataset Features
+
+* Age
+* BMI
+* Children
+* Smoker Status
+* Region
+
+Target:
+
+* Charges
+
+---
+
+# Project Workflow
+
+Dataset Collection
+
+↓
+
+Data Cleaning
+
+↓
+
+Feature Preparation
+
+↓
+
+Train-Test Split
+
+↓
+
+Linear Regression Training
+
+↓
+
+Prediction
+
+↓
+
+Evaluation
+
+---
+
+# Model Evaluation Results
+
+MAE = 7160.59
+
+RMSE = 9532.88
+
+R² Score = 0.536
+
+---
+
+# Interpretation
+
+## MAE
+
+Average prediction error:
+
+₹7160.59
+
+---
+
+## RMSE
+
+Average prediction deviation:
+
+₹9532.88
+
+---
+
+## R² Score
+
+53.6% of insurance charge variation explained by the model.
+
+---
+
+# Advantages of Linear Regression
+
+* Easy to understand
+* Fast training
+* Interpretable results
+* Strong baseline model
+
+---
+
+# Limitations
+
+* Assumes linear relationships
+* Sensitive to outliers
+* May underperform on complex datasets
+
+---
+
+# Real-World Applications
+
+* Insurance Pricing
+* Sales Forecasting
+* House Price Prediction
+* Demand Forecasting
+
+---
+
+# Key Takeaways
+
+* Linear Regression predicts numerical values.
+* It learns a best-fit line.
+* It is often the first algorithm used in regression problems.
+* Evaluation is performed using MAE, RMSE, and R².
+
+---
+
+# What I Learned
+
+* Linear Regression fundamentals
+* Best-fit line concept
+* Model evaluation
+* Regression metrics
+* Practical implementation using insurance data
