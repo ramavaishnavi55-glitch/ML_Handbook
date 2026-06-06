@@ -1,0 +1,377 @@
+# Chapter 1: Machine Learning Lifecycle
+
+## What is the Machine Learning Lifecycle?
+
+The Machine Learning (ML) Lifecycle is the complete process of building, deploying, and maintaining a machine learning model.
+
+It starts with identifying a business problem and ends with continuously monitoring and improving the deployed model.
+
+The lifecycle ensures that machine learning solutions remain accurate, reliable, and useful over time.
+
+---
+
+# Machine Learning Lifecycle Workflow
+
+Business Goal Identification
+
+↓
+
+ML Problem Framing
+
+↓
+
+Data Collection
+
+↓
+
+Data Preprocessing
+
+↓
+
+Feature Engineering
+
+↓
+
+Model Training
+
+↓
+
+Model Evaluation
+
+↓
+
+Model Deployment
+
+↓
+
+Model Monitoring
+
+↓
+
+Model Retraining
+
+↓
+
+Continuous Improvement
+
+---
+
+# 1. Business Goal Identification
+
+## Definition
+
+The first step in any ML project is understanding the business problem.
+
+Machine learning should solve a real problem rather than being used simply because it is available.
+
+## Examples
+
+* Predict insurance costs
+* Detect fraudulent transactions
+* Recommend movies
+* Recognize handwritten digits
+
+## Output
+
+A clearly defined business objective.
+
+---
+
+# 2. ML Problem Framing
+
+## Definition
+
+Convert the business problem into a machine learning problem.
+
+## Examples
+
+| Business Problem              | ML Problem Type        |
+| ----------------------------- | ---------------------- |
+| Predict house prices          | Regression             |
+| Detect spam emails            | Classification         |
+| Group customers               | Clustering             |
+| Teach an agent to play a game | Reinforcement Learning |
+
+## Output
+
+Selection of the correct ML approach.
+
+---
+
+# 3. Data Collection
+
+## Definition
+
+Gather data required for training the model.
+
+## Sources
+
+* CSV files
+* Databases
+* APIs
+* Sensors
+* User-generated data
+
+## Example
+
+For handwritten digit recognition:
+
+Dataset = MNIST
+
+Training Images = 60,000
+
+Testing Images = 10,000
+
+---
+
+# 4. Data Preprocessing
+
+## Definition
+
+Cleaning and preparing raw data before training.
+
+## Common Tasks
+
+* Handling missing values
+* Removing duplicates
+* Fixing incorrect data types
+* Handling outliers
+* Normalization
+* Standardization
+
+## Example
+
+Movie Recommendation Project:
+
+* Removed duplicate movies
+* Converted rating values to numeric
+* Filled missing popularity values
+
+---
+
+# 5. Feature Engineering
+
+## Definition
+
+Creating useful features that improve model performance.
+
+## Examples
+
+Original Feature:
+
+Date of Birth
+
+Engineered Features:
+
+* Age
+* Age Group
+
+## Purpose
+
+Help the model learn important patterns.
+
+---
+
+# 6. Model Training
+
+## Definition
+
+The model learns patterns from training data.
+
+## Examples
+
+Regression:
+
+* Linear Regression
+
+Clustering:
+
+* K-Means
+
+Deep Learning:
+
+* CNN
+
+Reinforcement Learning:
+
+* Q-Learning
+
+## Output
+
+A trained model.
+
+---
+
+# 7. Model Evaluation
+
+## Definition
+
+Measure how well the model performs on unseen data.
+
+## Common Metrics
+
+### Regression
+
+* MAE
+* MSE
+* RMSE
+* R² Score
+
+### Classification
+
+* Accuracy
+* Precision
+* Recall
+* F1 Score
+
+### Clustering
+
+* Silhouette Score
+* WCSS
+
+---
+
+# 8. Model Deployment
+
+## Definition
+
+Making the trained model available for real-world use.
+
+## Examples
+
+* Website
+* Mobile App
+* API
+* Cloud Service
+
+## Example
+
+Handwritten Digit Recognition Web App
+
+User uploads a digit image
+
+↓
+
+Model predicts the digit
+
+↓
+
+Prediction displayed
+
+---
+
+# 9. Model Monitoring
+
+## Definition
+
+Tracking model performance after deployment.
+
+## Why?
+
+Real-world data changes over time.
+
+A model that performs well today may become less accurate later.
+
+## Things to Monitor
+
+* Accuracy
+* Latency
+* User feedback
+* Data drift
+
+---
+
+# 10. Model Retraining
+
+## Definition
+
+Updating the model using new data.
+
+## Purpose
+
+Improve performance and adapt to changing patterns.
+
+## Example
+
+Retraining a recommendation system with newly released movies.
+
+---
+
+# 11. Continuous Improvement
+
+## Definition
+
+Machine learning is an iterative process.
+
+Teams continuously:
+
+* Collect new data
+* Improve features
+* Tune hyperparameters
+* Deploy better models
+
+This cycle repeats throughout the model's life.
+
+---
+
+# Real-World Example
+
+Insurance Cost Prediction Project
+
+Business Goal
+
+↓
+
+Predict insurance charges
+
+↓
+
+Collect Insurance Dataset
+
+↓
+
+Clean Data
+
+↓
+
+Train Linear Regression Model
+
+↓
+
+Evaluate Performance
+
+↓
+
+Deploy as Web App
+
+↓
+
+Monitor Predictions
+
+↓
+
+Retrain with New Data
+
+---
+
+# Key Takeaways
+
+* ML is more than training a model.
+* Data quality is critical.
+* Deployment is not the end of the project.
+* Monitoring and retraining are essential.
+* Machine learning follows a continuous lifecycle.
+
+---
+
+# What I Learned
+
+* End-to-end ML workflow
+* Business problem solving
+* Data preparation
+* Model development
+* Deployment concepts
+* Monitoring strategies
+* Continuous improvement process
+
+This lifecycle serves as the foundation for all machine learning projects.
