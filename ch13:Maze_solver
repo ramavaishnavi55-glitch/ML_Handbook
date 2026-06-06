@@ -1,0 +1,446 @@
+# Chapter 13: Maze Solver using Reinforcement Learning
+
+## Project Overview
+
+This project implements a Maze Solver using Reinforcement Learning and the Q-Learning algorithm.
+
+The objective is to train an intelligent agent to navigate through a maze and reach the goal state while maximizing rewards and minimizing penalties.
+
+Unlike supervised learning, no correct answers are provided. The agent learns through trial and error by interacting with the environment.
+
+---
+
+# Problem Statement
+
+Finding the shortest path in a maze is a common problem in Artificial Intelligence and Robotics.
+
+The goal of this project is to:
+
+* Train an agent to navigate a maze.
+* Learn optimal actions through rewards and penalties.
+* Discover the shortest path from start to goal.
+* Visualize the learning process.
+
+---
+
+# Project Objective
+
+Build an intelligent system that:
+
+* Starts from an initial state.
+* Explores the maze.
+* Learns from experience.
+* Finds the optimal route to the goal.
+
+---
+
+# Reinforcement Learning Approach
+
+The project uses:
+
+Q-Learning
+
+A model-free Reinforcement Learning algorithm.
+
+The agent learns a policy that maximizes cumulative rewards.
+
+---
+
+# Environment Design
+
+## Maze Size
+
+4 × 4 Grid
+
+---
+
+## Number of States
+
+16 States
+
+Each cell in the maze represents a unique state.
+
+Example:
+
+| State Number | Cell Position |
+| ------------ | ------------- |
+| 0            | (0,0)         |
+| 1            | (0,1)         |
+| 2            | (0,2)         |
+| ...          | ...           |
+| 15           | (3,3)         |
+
+---
+
+# Agent Actions
+
+The agent can perform four actions:
+
+* Up
+* Down
+* Left
+* Right
+
+---
+
+# Reward Structure
+
+The reward system guides learning.
+
+| Action Result | Reward |
+| ------------- | ------ |
+| Normal Move   | -1     |
+| Goal State    | +100   |
+
+---
+
+# Why Use Negative Rewards?
+
+Normal moves receive a small penalty.
+
+This encourages the agent to:
+
+* Reach the goal quickly.
+* Avoid unnecessary movements.
+* Learn shorter paths.
+
+---
+
+# State Representation
+
+The maze is converted into numerical states.
+
+Example:
+
+4 × 4 Grid
+
+↓
+
+16 Unique States
+
+This representation allows storage inside the Q-Table.
+
+---
+
+# Q-Table Initialization
+
+A Q-Table is created with:
+
+Rows:
+
+States
+
+Columns:
+
+Actions
+
+Initially:
+
+All Q-values = 0
+
+Example:
+
+| State | Up | Down | Left | Right |
+| ----- | -- | ---- | ---- | ----- |
+| S0    | 0  | 0    | 0    | 0     |
+| S1    | 0  | 0    | 0    | 0     |
+
+---
+
+# Learning Process
+
+The agent repeatedly:
+
+1. Selects an action.
+2. Moves within the maze.
+3. Receives a reward.
+4. Updates the Q-value.
+5. Learns a better policy.
+
+---
+
+# Q-Learning Formula
+
+The Q-value update rule is:
+
+Q(s,a) = Q(s,a) + α[r + γ max(Q') − Q(s,a)]
+
+Where:
+
+* α = Learning Rate
+* γ = Discount Factor
+* r = Reward
+* Q(s,a) = Current Q-value
+
+---
+
+# Exploration vs Exploitation
+
+## Exploration
+
+The agent tries new actions.
+
+Purpose:
+
+Discover potentially better paths.
+
+---
+
+## Exploitation
+
+The agent uses learned knowledge.
+
+Purpose:
+
+Maximize rewards.
+
+---
+
+# Training Workflow
+
+Initialize Q-Table
+
+↓
+
+Start Episode
+
+↓
+
+Choose Action
+
+↓
+
+Move Agent
+
+↓
+
+Receive Reward
+
+↓
+
+Update Q-Value
+
+↓
+
+Repeat
+
+↓
+
+Learn Optimal Path
+
+---
+
+# Learning Stages
+
+## Stage 1: Random Exploration
+
+The agent moves randomly.
+
+Performance is poor.
+
+---
+
+## Stage 2: Pattern Discovery
+
+The agent begins identifying useful paths.
+
+Q-values start increasing.
+
+---
+
+## Stage 3: Optimal Learning
+
+The agent consistently selects the best actions.
+
+The shortest path emerges.
+
+---
+
+# Sample Learning Behavior
+
+Initial Episodes:
+
+Random wandering.
+
+---
+
+Middle Episodes:
+
+Frequent goal discovery.
+
+---
+
+Final Episodes:
+
+Direct path to goal.
+
+---
+
+# Project Workflow
+
+Problem Definition
+
+↓
+
+Maze Design
+
+↓
+
+State Representation
+
+↓
+
+Reward Assignment
+
+↓
+
+Q-Table Initialization
+
+↓
+
+Training
+
+↓
+
+Policy Learning
+
+↓
+
+Optimal Path Discovery
+
+↓
+
+Visualization
+
+---
+
+# Visualization
+
+A web-based interface was developed to visualize:
+
+* Maze Grid
+* Agent Position
+* Learning Progress
+* Final Optimal Path
+
+This makes Reinforcement Learning easier to understand.
+
+---
+
+# Challenges Faced
+
+## Understanding Rewards vs Q-Values
+
+Initially it was difficult to understand the difference between:
+
+Immediate Rewards
+
+and
+
+Future Q-Values
+
+---
+
+## State Mapping
+
+Converting maze coordinates into numerical states required careful design.
+
+---
+
+## Reward Engineering
+
+Choosing an effective reward structure was critical.
+
+---
+
+## Training Debugging
+
+The agent occasionally appeared stuck.
+
+This required checking:
+
+* Action selection
+* Reward assignment
+* Q-value updates
+
+---
+
+## Understanding Discount Factor
+
+Learning how future rewards influence current decisions was a key challenge.
+
+---
+
+# Concepts Learned
+
+Through this project I learned:
+
+* Reinforcement Learning
+* Q-Learning
+* Q-Table Updates
+* State Representation
+* Agent-Environment Interaction
+* Reward Engineering
+* Exploration vs Exploitation
+* Optimal Policy Learning
+
+---
+
+# Real-World Applications
+
+## Robotics
+
+Robot navigation.
+
+---
+
+## Self-Driving Cars
+
+Route planning and decision making.
+
+---
+
+## Gaming AI
+
+Learning strategies.
+
+---
+
+## Warehouse Automation
+
+Optimal movement planning.
+
+---
+
+# Future Improvements
+
+* Larger Mazes
+* Obstacles and Walls
+* Dynamic Environments
+* Deep Q-Networks (DQN)
+* Multiple Goal States
+* 3D Maze Environments
+
+---
+
+# Key Takeaways
+
+* Reinforcement Learning learns through interaction.
+* Q-Learning uses a Q-Table to store knowledge.
+* Rewards guide agent behavior.
+* Exploration and exploitation must be balanced.
+* Agents can learn optimal paths without labeled data.
+
+---
+
+# What I Learned
+
+* Practical Reinforcement Learning
+* Q-Learning implementation
+* Reward design
+* State-action representation
+* Agent training
+* Policy optimization
+* Web-based visualization of RL concepts
+
+This project demonstrated how intelligent agents can learn from experience and make optimal decisions through Reinforcement Learning.
