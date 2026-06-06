@@ -1,0 +1,194 @@
+# Chapter 6: Regression
+
+## Introduction
+
+Regression is a type of Supervised Learning used to predict continuous numerical values.
+
+The model learns the relationship between input features and a numerical target variable.
+
+---
+
+# What is Regression?
+
+Regression answers questions such as:
+
+* What will be the house price?
+* What will be the insurance cost?
+* What will be tomorrow's temperature?
+* How much revenue will be generated?
+
+The output is always a number.
+
+---
+
+# Examples
+
+| Problem                   | Output    |
+| ------------------------- | --------- |
+| House Price Prediction    | ₹50 Lakhs |
+| Insurance Cost Prediction | ₹25,000   |
+| Temperature Forecasting   | 32°C      |
+| Sales Prediction          | ₹100,000  |
+
+---
+
+# How Regression Works
+
+Historical Data
+
+↓
+
+Pattern Learning
+
+↓
+
+Model Training
+
+↓
+
+Prediction
+
+---
+
+# Example
+
+Input:
+
+Age = 30
+
+BMI = 25
+
+Children = 2
+
+Smoker = No
+
+↓
+
+Predicted Insurance Charges
+
+↓
+
+₹15,000
+
+---
+
+# Types of Regression
+
+## Linear Regression
+
+Assumes a linear relationship between variables.
+
+Most commonly used regression algorithm.
+
+---
+
+## Polynomial Regression
+
+Used when relationships are curved rather than straight.
+
+---
+
+## Multiple Linear Regression
+
+Uses multiple input variables.
+
+Example:
+
+Age + BMI + Children + Smoker
+
+↓
+
+Insurance Charges
+
+---
+
+# Regression Workflow
+
+Data Collection
+
+↓
+
+Data Cleaning
+
+↓
+
+Feature Selection
+
+↓
+
+Model Training
+
+↓
+
+Prediction
+
+↓
+
+Evaluation
+
+---
+
+# Evaluation Metrics
+
+## MAE
+
+Mean Absolute Error
+
+Average prediction error.
+
+---
+
+## MSE
+
+Mean Squared Error
+
+Squares prediction errors.
+
+---
+
+## RMSE
+
+Root Mean Squared Error
+
+Measures prediction accuracy.
+
+---
+
+## R² Score
+
+Measures how much variation the model explains.
+
+Range:
+
+0 to 1
+
+Higher is better.
+
+---
+
+# Real-World Applications
+
+* Insurance Pricing
+* House Price Prediction
+* Stock Forecasting
+* Sales Forecasting
+* Energy Consumption Prediction
+
+---
+
+# Key Takeaways
+
+* Regression predicts numerical values.
+* It is a supervised learning technique.
+* Linear Regression is the most common regression algorithm.
+* Evaluation metrics include MAE, RMSE, and R² Score.
+
+---
+
+# What I Learned
+
+* Numerical prediction problems
+* Continuous target variables
+* Regression workflow
+* Regression evaluation metrics
+* Real-world regression applications
