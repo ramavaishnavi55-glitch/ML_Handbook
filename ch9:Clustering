@@ -1,0 +1,200 @@
+# Chapter 9: Clustering
+
+## Introduction
+
+Clustering is an Unsupervised Machine Learning technique used to group similar data points together.
+
+Unlike supervised learning, clustering does not require labeled data.
+
+The algorithm automatically discovers hidden patterns and structures within the dataset.
+
+---
+
+# What is Clustering?
+
+Clustering divides data into groups called clusters.
+
+Data points within the same cluster are more similar to each other than to data points in other clusters.
+
+---
+
+# Example
+
+Customer Data
+
+↓
+
+Grouping Customers
+
+↓
+
+High Spenders
+
+Average Spenders
+
+Low Spenders
+
+---
+
+# Why Clustering is Important
+
+Many real-world datasets do not contain labels.
+
+Clustering helps:
+
+* Discover hidden patterns
+* Segment customers
+* Organize large datasets
+* Build recommendation systems
+
+---
+
+# Clustering Workflow
+
+Dataset
+
+↓
+
+Feature Selection
+
+↓
+
+Similarity Measurement
+
+↓
+
+Cluster Formation
+
+↓
+
+Analysis
+
+---
+
+# How Clustering Works
+
+Suppose we have customer information:
+
+| Customer | Income | Spending Score |
+| -------- | ------ | -------------- |
+| A        | High   | High           |
+| B        | High   | High           |
+| C        | Low    | Low            |
+
+The clustering algorithm groups:
+
+Cluster 1
+
+A, B
+
+Cluster 2
+
+C
+
+---
+
+# Common Clustering Algorithms
+
+## K-Means
+
+Most popular clustering algorithm.
+
+Groups data into K clusters.
+
+---
+
+## Hierarchical Clustering
+
+Builds clusters in a tree structure.
+
+---
+
+## DBSCAN
+
+Groups dense regions together.
+
+Useful for irregular shapes.
+
+---
+
+# Applications of Clustering
+
+## Customer Segmentation
+
+Grouping customers based on behavior.
+
+---
+
+## Recommendation Systems
+
+Grouping similar products or movies.
+
+---
+
+## Healthcare
+
+Patient grouping.
+
+---
+
+## Marketing
+
+Target audience segmentation.
+
+---
+
+# Advantages
+
+* No labeled data required
+* Discovers hidden patterns
+* Easy to understand
+* Useful for exploration
+
+---
+
+# Limitations
+
+* Difficult to evaluate
+* Sensitive to feature selection
+* Results may vary
+
+---
+
+# Examples from My Projects
+
+## Customer Segmentation
+
+Used K-Means Clustering.
+
+Goal:
+
+Group similar customers.
+
+---
+
+## Movie Recommendation System
+
+Used K-Means Clustering.
+
+Goal:
+
+Group similar movies.
+
+---
+
+# Key Takeaways
+
+* Clustering is an unsupervised learning technique.
+* Similar data points are grouped together.
+* Labels are not required.
+* Useful for segmentation and recommendations.
+
+---
+
+# What I Learned
+
+* Concept of clustering
+* Hidden pattern discovery
+* Cluster formation
+* Clustering applications
+* Importance of feature selection
