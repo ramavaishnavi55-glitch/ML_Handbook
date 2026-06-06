@@ -1,0 +1,493 @@
+# Chapter 5: Feature Engineering
+
+## Introduction
+
+Feature Engineering is the process of creating, selecting, and transforming features that help machine learning models learn better patterns from data.
+
+Good features often improve model performance more than changing algorithms.
+
+Many data scientists consider feature engineering one of the most important skills in machine learning.
+
+---
+
+# What is a Feature?
+
+A feature is an input variable used by a machine learning model.
+
+Example:
+
+Insurance Dataset
+
+Features:
+
+* Age
+* BMI
+* Children
+* Smoker Status
+
+Target:
+
+* Insurance Charges
+
+The model uses the features to predict the target.
+
+---
+
+# Why Feature Engineering is Important
+
+Raw data is not always useful.
+
+Feature engineering transforms raw data into meaningful information.
+
+Better Features
+
+↓
+
+Better Learning
+
+↓
+
+Better Predictions
+
+---
+
+# Feature Engineering Workflow
+
+Raw Data
+
+↓
+
+Feature Selection
+
+↓
+
+Feature Creation
+
+↓
+
+Feature Transformation
+
+↓
+
+Feature Scaling
+
+↓
+
+Model Training
+
+---
+
+# 1. Feature Selection
+
+## Definition
+
+Selecting only the most useful features.
+
+Not every feature contributes to learning.
+
+Some may be irrelevant.
+
+---
+
+## Example
+
+Movie Dataset
+
+Available Features:
+
+* Movie Name
+* Genre
+* Rating
+* Popularity
+* Vote Count
+
+Selected Features:
+
+* Rating
+* Popularity
+
+Reason:
+
+Numerical features suitable for K-Means clustering.
+
+---
+
+# Benefits
+
+* Faster training
+* Reduced complexity
+* Better performance
+
+---
+
+# 2. Feature Creation
+
+## Definition
+
+Creating new features from existing features.
+
+---
+
+## Example
+
+Date of Birth
+
+↓
+
+Age
+
+A model usually learns better from Age than Date of Birth.
+
+---
+
+## Example
+
+Salary and Expenses
+
+↓
+
+Savings
+
+Savings = Salary − Expenses
+
+---
+
+# 3. Feature Transformation
+
+## Definition
+
+Changing feature format without changing information.
+
+---
+
+## Example
+
+Gender
+
+Male
+
+Female
+
+↓
+
+0
+
+1
+
+---
+
+This process is called Encoding.
+
+---
+
+# 4. One-Hot Encoding
+
+## Definition
+
+Converts categorical variables into binary columns.
+
+---
+
+## Example
+
+Color
+
+Red
+
+Blue
+
+Green
+
+↓
+
+Red | Blue | Green
+
+1 | 0 | 0
+
+0 | 1 | 0
+
+0 | 0 | 1
+
+---
+
+# Example
+
+Future Improvement Planned
+
+Movie Recommendation Project
+
+Genre
+
+↓
+
+One-Hot Encoding
+
+↓
+
+Improved Recommendations
+
+---
+
+# 5. Feature Scaling
+
+## Definition
+
+Making features comparable in magnitude.
+
+---
+
+## Example
+
+Age = 25
+
+Income = 100000
+
+Without scaling:
+
+Income dominates.
+
+With scaling:
+
+Both contribute fairly.
+
+---
+
+## Methods
+
+### Normalization
+
+Range:
+
+0 to 1
+
+---
+
+### Standardization
+
+Mean = 0
+
+Standard Deviation = 1
+
+---
+
+# Example
+
+Customer Segmentation Project
+
+Used:
+
+StandardScaler
+
+Reason:
+
+K-Means performs better on scaled data.
+
+---
+
+# 6. Dimensionality Reduction
+
+## Definition
+
+Reducing the number of features while preserving information.
+
+---
+
+## Example
+
+100 Features
+
+↓
+
+20 Features
+
+↓
+
+Faster Training
+
+---
+
+Common Technique:
+
+PCA (Principal Component Analysis)
+
+---
+
+# Feature Engineering in My Projects
+
+## Insurance Cost Prediction
+
+Features:
+
+* Age
+* BMI
+* Children
+* Smoker
+
+Target:
+
+Charges
+
+---
+
+## Customer Segmentation
+
+Features:
+
+* Income
+* Spending Score
+
+Performed:
+
+Feature Scaling
+
+---
+
+## Movie Recommendation
+
+Selected Features:
+
+* Rating
+* Popularity
+
+Reason:
+
+Suitable for clustering.
+
+---
+
+## Maze Solver
+
+Features:
+
+State Representation
+
+Each maze cell represented as a numerical state.
+
+Example:
+
+4 × 4 Maze
+
+↓
+
+16 States
+
+---
+
+## Handwritten Digit Recognition
+
+Features:
+
+Pixel Values
+
+Image:
+
+28 × 28
+
+↓
+
+784 Pixel Features
+
+CNN automatically learns higher-level features.
+
+---
+
+# Good vs Bad Features
+
+## Good Features
+
+* Relevant
+* Informative
+* Consistent
+
+Examples:
+
+Age
+
+Income
+
+Rating
+
+Popularity
+
+---
+
+## Bad Features
+
+* Irrelevant
+* Noisy
+* Redundant
+
+Examples:
+
+Random IDs
+
+Duplicate Features
+
+Missing Information
+
+---
+
+# Benefits of Feature Engineering
+
+* Improves model accuracy
+* Reduces overfitting
+* Faster training
+* Better interpretability
+* Stronger predictive power
+
+---
+
+# Real-World Examples
+
+## Banking
+
+Features:
+
+* Income
+* Credit Score
+* Loan History
+
+---
+
+## Healthcare
+
+Features:
+
+* Age
+* Blood Pressure
+* Cholesterol
+
+---
+
+## E-Commerce
+
+Features:
+
+* Purchase History
+* Product Ratings
+* Browsing Behavior
+
+---
+
+# Key Takeaways
+
+* Features are inputs used by ML models.
+* Good features improve performance.
+* Feature selection removes irrelevant variables.
+* Feature creation generates useful information.
+* Scaling improves many algorithms.
+* Feature engineering is often more important than choosing complex models.
+
+---
+
+# What I Learned
+
+* Feature selection
+* Feature creation
+* Feature transformation
+* Encoding techniques
+* Feature scaling
+* Dimensionality reduction
+* Importance of quality features
+
+Feature engineering is the bridge between raw data and successful machine learning models.
