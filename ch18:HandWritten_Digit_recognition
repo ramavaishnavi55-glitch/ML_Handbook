@@ -1,0 +1,214 @@
+# Chapter 18: Handwritten Digit Recognition using CNN and PyTorch
+
+## Project Overview
+
+This project implements a Handwritten Digit Recognition Web Application using a Convolutional Neural Network (CNN) trained on the MNIST dataset.
+
+The application predicts handwritten digits in real time and demonstrates the practical use of Deep Learning for image classification.
+
+---
+
+# Problem Statement
+
+Computers cannot naturally understand handwritten characters.
+
+The objective is to train a CNN model capable of recognizing handwritten digits accurately.
+
+---
+
+# Dataset Information
+
+Dataset: MNIST
+
+Training Images: 60,000
+
+Testing Images: 10,000
+
+Classes: 10
+
+Digits: 0–9
+
+Image Size: 28 × 28 Pixels
+
+---
+
+# Technology Stack
+
+* Python
+* PyTorch
+* CNN
+* NumPy
+* Flask/Frontend
+* HTML/CSS/JavaScript
+
+---
+
+# CNN Architecture
+
+Input Layer
+
+↓
+
+Convolution Layer 1
+
+↓
+
+Convolution Layer 2
+
+↓
+
+Pooling Layers
+
+↓
+
+Fully Connected Layer 1
+
+↓
+
+Fully Connected Layer 2
+
+↓
+
+Output Layer
+
+---
+
+# Model Configuration
+
+CNN Structure:
+
+* 2 Convolution Layers
+* 2 Fully Connected Layers
+
+Framework:
+
+PyTorch
+
+---
+
+# Training Process
+
+1. Load MNIST dataset.
+2. Normalize images.
+3. Train CNN.
+4. Calculate loss.
+5. Update weights.
+6. Evaluate model.
+
+---
+
+# Model Performance
+
+Final Test Accuracy:
+
+**98.89%**
+
+---
+
+# Prediction Workflow
+
+User Draws Digit
+
+↓
+
+Image Preprocessing
+
+↓
+
+CNN Model
+
+↓
+
+Prediction
+
+↓
+
+Displayed Result
+
+---
+
+# Real-World Applications
+
+* OCR Systems
+* Bank Cheque Recognition
+* Postal Code Reading
+* Document Digitization
+* Automated Form Processing
+* Smart Scanning Applications
+
+---
+
+# Challenges Faced
+
+* Understanding CNN architecture
+* Tensor operations
+* Model deployment
+* Image preprocessing
+* Prediction pipelines
+
+---
+
+# Learning Outcomes
+
+Through this project, I learned:
+
+* Deep Learning fundamentals
+* CNN architecture
+* PyTorch implementation
+* Model training
+* Model evaluation
+* Web deployment
+
+---
+
+# Future Improvements
+
+* Support handwritten letters
+* Improve UI
+* Deploy to cloud
+* Add drawing canvas
+* Multi-language recognition
+
+---
+
+# Project Workflow
+
+MNIST Dataset
+
+↓
+
+Preprocessing
+
+↓
+
+CNN Training
+
+↓
+
+Model Evaluation
+
+↓
+
+Web Application
+
+↓
+
+Prediction
+
+---
+
+# Conclusion
+
+This project successfully demonstrates how Convolutional Neural Networks can achieve highly accurate handwritten digit recognition.
+
+With an accuracy of **98.89%**, the model effectively classifies handwritten digits and showcases the practical power of Deep Learning in image classification tasks.
+
+---
+
+# What I Learned
+
+* CNN implementation using PyTorch
+* Image classification
+* Feature extraction
+* Deep Learning deployment
+* End-to-end AI project development
