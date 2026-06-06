@@ -1,0 +1,461 @@
+# Chapter 3: Types of Machine Learning
+
+## Introduction
+
+Machine Learning can be categorized into different types based on how the model learns from data.
+
+The three major types of Machine Learning are:
+
+1. Supervised Learning
+2. Unsupervised Learning
+3. Reinforcement Learning
+
+Each type is designed to solve different kinds of problems.
+
+---
+
+# Overview of Machine Learning Types
+
+Machine Learning
+
+├── Supervised Learning
+
+├── Unsupervised Learning
+
+└── Reinforcement Learning
+
+---
+
+# 1. Supervised Learning
+
+## Definition
+
+Supervised Learning is a type of machine learning where the model learns from labeled data.
+
+Labeled data means that both the input and the correct output are provided during training.
+
+The model learns the relationship between inputs and outputs and then predicts outputs for new data.
+
+---
+
+## How It Works
+
+Training Data
+
+(Input + Correct Output)
+
+↓
+
+Model Training
+
+↓
+
+Pattern Learning
+
+↓
+
+Prediction on New Data
+
+---
+
+## Example
+
+### Insurance Cost Prediction
+
+Input Features:
+
+* Age
+* BMI
+* Children
+* Smoker Status
+
+Output:
+
+* Insurance Charges
+
+The model learns how these features affect insurance costs.
+
+---
+
+## Types of Supervised Learning
+
+### Regression
+
+Used when the output is a continuous numerical value.
+
+Examples:
+
+* House Price Prediction
+* Insurance Cost Prediction
+* Temperature Forecasting
+
+Output Examples:
+
+₹250000
+
+₹500000
+
+₹750000
+
+---
+
+### Classification
+
+Used when the output belongs to categories.
+
+Examples:
+
+* Spam Detection
+* Disease Detection
+* Digit Classification
+
+Output Examples:
+
+Spam / Not Spam
+
+Healthy / Diseased
+
+Digit = 5
+
+---
+
+## Advantages
+
+* High prediction accuracy
+* Easy evaluation
+* Widely used in industry
+
+---
+
+## Disadvantages
+
+* Requires labeled data
+* Data labeling can be expensive
+* Performance depends on data quality
+
+---
+
+# 2. Unsupervised Learning
+
+## Definition
+
+Unsupervised Learning is a type of machine learning where the model learns from unlabeled data.
+
+The algorithm finds hidden patterns and structures without knowing the correct outputs.
+
+---
+
+## How It Works
+
+Input Data
+
+↓
+
+Pattern Discovery
+
+↓
+
+Group Formation
+
+↓
+
+Insights
+
+---
+
+## Example
+
+### Customer Segmentation
+
+Customer Information:
+
+* Age
+* Income
+* Spending Score
+
+No labels are provided.
+
+The algorithm automatically groups similar customers together.
+
+---
+
+## Common Tasks
+
+### Clustering
+
+Grouping similar data points.
+
+Examples:
+
+* Customer Segmentation
+* Movie Grouping
+* Market Analysis
+
+Algorithms:
+
+* K-Means
+* DBSCAN
+* Hierarchical Clustering
+
+---
+
+### Association
+
+Finding relationships between items.
+
+Example:
+
+Customers who buy bread often buy butter.
+
+---
+
+## Advantages
+
+* No labeled data required
+* Finds hidden patterns
+* Useful for exploration
+
+---
+
+## Disadvantages
+
+* Difficult to evaluate
+* Results may be harder to interpret
+* Cluster quality may vary
+
+---
+
+# Example from My Projects
+
+## Customer Segmentation
+
+Algorithm:
+
+K-Means Clustering
+
+Goal:
+
+Group customers with similar behavior.
+
+---
+
+## Movie Recommendation System
+
+Algorithm:
+
+K-Means Clustering
+
+Goal:
+
+Group similar movies using rating and popularity.
+
+---
+
+# 3. Reinforcement Learning
+
+## Definition
+
+Reinforcement Learning (RL) is a type of machine learning where an agent learns by interacting with an environment.
+
+The agent receives rewards for good actions and penalties for bad actions.
+
+Its objective is to maximize the total reward.
+
+---
+
+# Key Components
+
+## Agent
+
+The learner.
+
+Example:
+
+Maze-solving robot.
+
+---
+
+## Environment
+
+The world where the agent operates.
+
+Example:
+
+Maze grid.
+
+---
+
+## State
+
+Current situation of the agent.
+
+Example:
+
+Current maze position.
+
+---
+
+## Action
+
+Decision taken by the agent.
+
+Examples:
+
+* Up
+* Down
+* Left
+* Right
+
+---
+
+## Reward
+
+Feedback received after an action.
+
+Examples:
+
+Goal Reached = +100
+
+Normal Move = -1
+
+---
+
+# Reinforcement Learning Workflow
+
+Agent
+
+↓
+
+Takes Action
+
+↓
+
+Environment Responds
+
+↓
+
+Reward Received
+
+↓
+
+Learning
+
+↓
+
+Improved Action Selection
+
+---
+
+# Example: Maze Solver Project
+
+Agent:
+
+Maze Solver
+
+Environment:
+
+4 × 4 Maze
+
+Actions:
+
+* Up
+* Down
+* Left
+* Right
+
+Rewards:
+
+* Goal = +100
+* Normal Move = -1
+
+The agent gradually learns the optimal path.
+
+---
+
+# Advantages
+
+* Learns through experience
+* Suitable for dynamic environments
+* Can solve complex decision-making problems
+
+---
+
+# Disadvantages
+
+* Requires many training iterations
+* Computationally expensive
+* Difficult to tune
+
+---
+
+# Comparison of ML Types
+
+| Feature   | Supervised Learning  | Unsupervised Learning | Reinforcement Learning |
+| --------- | -------------------- | --------------------- | ---------------------- |
+| Data Type | Labeled              | Unlabeled             | Reward-Based           |
+| Goal      | Predict Outputs      | Discover Patterns     | Maximize Reward        |
+| Output    | Predictions          | Groups/Patterns       | Optimal Actions        |
+| Example   | Insurance Prediction | Customer Segmentation | Maze Solver            |
+
+---
+
+# Real-World Applications
+
+## Supervised Learning
+
+* House Price Prediction
+* Fraud Detection
+* Email Spam Detection
+* Medical Diagnosis
+
+---
+
+## Unsupervised Learning
+
+* Customer Segmentation
+* Recommendation Systems
+* Market Basket Analysis
+
+---
+
+## Reinforcement Learning
+
+* Robotics
+* Self-Driving Cars
+* Game Playing AI
+* Autonomous Navigation
+
+---
+
+# Projects Mapped to ML Types
+
+| Project                       | ML Type                             |
+| ----------------------------- | ----------------------------------- |
+| Insurance Cost Prediction     | Supervised Learning                 |
+| Customer Segmentation         | Unsupervised Learning               |
+| Movie Recommendation System   | Unsupervised Learning               |
+| Maze Solver                   | Reinforcement Learning              |
+| Handwritten Digit Recognition | Supervised Learning + Deep Learning |
+
+---
+
+# Key Takeaways
+
+* Supervised Learning uses labeled data.
+* Unsupervised Learning uses unlabeled data.
+* Reinforcement Learning learns through rewards and penalties.
+* Different ML types solve different kinds of problems.
+* Choosing the correct ML type is essential for project success.
+
+---
+
+# What I Learned
+
+* Three major types of Machine Learning
+* Difference between labeled and unlabeled data
+* Regression and Classification
+* Clustering concepts
+* Reinforcement Learning fundamentals
+* Real-world applications of each ML type
+
+This chapter forms the foundation for understanding all machine learning algorithms and selecting the right approach for a given problem.
